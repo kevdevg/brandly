@@ -1,59 +1,59 @@
 # Brandly (Legacy v1)
 
-**Brandly** es una plataforma de edición y automatización de branding basada en un motor de renderizado asíncrono customizado. Esta versión inicial (Legacy v1) es una prueba de concepto (PoC) funcional que demuestra la viabilidad de utilizar tecnologías web (HTML/CSS/JS) combinadas con **Puppeteer** y **FFmpeg** para renderizar contenido multimedia, alejándose de soluciones más restrictivas.
+**Brandly** is a branding automation and editing platform powered by a custom asynchronous rendering engine. This initial release (Legacy v1) serves as a functional Proof of Concept (PoC) demonstrating the viability of using web technologies (HTML/CSS/JS) combined with **Puppeteer** and **FFmpeg** to render multimedia content, bypassing more restrictive solutions.
 
-Este repositorio es de código abierto bajo la licencia MIT.
+This repository is open source under the MIT License.
 
-## 🚀 ¿Para qué sirve?
+## 🚀 What is it for?
 
-El objetivo principal de Brandly v1 es permitir la creación, previsualización y exportación de plantillas de video e imágenes dinámicas (basadas en un formato `DesignMD`).
-A través de su interfaz de edición, puedes:
-- Diseñar composiciones con múltiples capas (video, imagen, texto).
-- Inyectar variables de marca dinámicas.
-- Previsualizar en tiempo real usando un motor web React + Vite.
-- Exportar la composición final a video `.mp4` ejecutando un pipeline backend que captura la pantalla frame a frame con Puppeteer y unifica el audio/video con FFmpeg.
+The main goal of Brandly v1 is to enable the creation, real-time preview, and export of dynamic video and image templates (based on a `DesignMD` format).
+Through its editing interface, you can:
+- Design compositions with multiple layers (video, image, text).
+- Inject dynamic brand variables.
+- Preview in real time using a React + Vite web engine.
+- Export the final composition to an `.mp4` video by running a backend pipeline that captures the screen frame-by-frame with Puppeteer and merges audio/video streams using FFmpeg.
 
-## 🛠 Arquitectura
+## 🛠 Architecture
 
-El proyecto es un monorepo ligero que incluye:
-- **Frontend (React + Vite):** Interfaz de usuario y el reproductor de lienzos (`LivePreviewCanvas`) para previsualizar los cambios en tiempo real.
-- **Backend (Express / Electron):** API y endpoints de servidor encargados de gestionar las exportaciones pesadas, enlazando Puppeteer para las capturas de la UI y FFmpeg para la codificación.
+The project is a lightweight monorepo containing:
+- **Frontend (React + Vite):** The user interface and the canvas player (`LivePreviewCanvas`) to preview changes in real time.
+- **Backend (Express / Electron):** API and server endpoints responsible for handling heavy export tasks, bridging Puppeteer for UI capturing and FFmpeg for encoding.
 
-## 📦 Instalación y Uso
+## 📦 Installation and Usage
 
-### Prerrequisitos
-Asegúrate de tener instalado en tu sistema:
+### Prerequisites
+Make sure you have the following installed on your system:
 - [Node.js](https://nodejs.org/) (v18+)
-- [FFmpeg](https://ffmpeg.org/) (debe estar disponible en tu variable de entorno PATH)
-- Gestor de paquetes `yarn` o `npm`.
+- [FFmpeg](https://ffmpeg.org/) (must be available in your system's PATH)
+- A package manager like `yarn` or `npm`.
 
-### Pasos de Instalación
+### Installation Steps
 
-1. **Clonar el repositorio:**
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/tu-usuario/brandly.git
+   git clone https://github.com/kevdevg/brandly.git
    cd brandly
    ```
 
-2. **Instalar dependencias:**
+2. **Install dependencies:**
    ```bash
    yarn install
-   # o
+   # or
    npm install
    ```
 
-3. **Iniciar en entorno de Desarrollo:**
-   Para iniciar tanto el servidor backend como el entorno de desarrollo frontend en simultáneo:
+3. **Start the Development Environment:**
+   To start both the backend server and the frontend development environment simultaneously:
    ```bash
    yarn dev
    ```
 
-4. **Variables de entorno:**
-   Copia el archivo `.env.example` a `.env` y configura tus puertos y endpoints si es necesario.
+4. **Environment Variables:**
+   Copy the `.env.example` file to `.env` and configure your ports and endpoints if necessary.
    ```bash
    cp .env.example .env
    ```
 
-## 📜 Licencia
+## 📜 License
 
-Este proyecto se distribuye bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
+This project is distributed under the **MIT** License. See the `LICENSE` file for more details.
