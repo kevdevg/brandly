@@ -1,4 +1,4 @@
-# Brandly (Legacy v1)
+# Brandly
 
 **Brandly** is a branding automation and editing platform powered by a custom asynchronous rendering engine. This initial release serves as a functional Proof of Concept (PoC) demonstrating the viability of using web technologies (HTML/CSS/JS) combined with **Puppeteer** and **FFmpeg** to render multimedia content, bypassing more restrictive solutions.
 
