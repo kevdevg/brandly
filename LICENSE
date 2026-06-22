@@ -19,3 +19,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+### Third-Party Credits
+
+This project includes concepts, utilities, and components heavily inspired by or derived from [Remotion](https://www.remotion.dev/). 
+Remotion is a framework for creating videos programmatically in React. 
+We acknowledge and credit the creators of Remotion for their foundational work in this space.
