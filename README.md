@@ -54,6 +54,21 @@ Make sure you have the following installed on your system:
    cp .env.example .env
    ```
 
-## 📜 License
+## 📜 License & Credits
 
-This project is distributed under the **MIT** License. See the `LICENSE` file for more details.
+This project is open-source and distributed under the **MIT License**.
+
+### What you can do:
+- **Commercial use**: You are free to use this project for commercial purposes.
+- **Modification**: You can modify the code to fit your needs.
+- **Distribution**: You can distribute the original or modified code.
+- **Private use**: You can use the code privately without distributing it.
+
+### Conditions:
+- **License and copyright notice**: You must include the original copyright notice and a copy of the license in any substantial uses or modifications.
+
+### Disclaimer:
+- **No Warranty**: The software is provided "as is", without warranty of any kind.
+
+### Third-Party Credits
+This project was built standing on the shoulders of giants. We heavily drew inspiration from **[Remotion](https://www.remotion.dev/)** for programmatic video concepts. We also extensively use **[Puppeteer](https://pptr.dev/)**, **[FFmpeg](https://ffmpeg.org/)**, **[React](https://react.dev/)**, **[Tailwind CSS](https://tailwindcss.com/)**, and **[dnd-kit](https://dndkit.com/)**. Please refer to the `LICENSE` file for full attribution and third-party credits.
