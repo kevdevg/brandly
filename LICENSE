@@ -24,6 +24,13 @@ SOFTWARE.
 
 ### Third-Party Credits
 
-This project includes concepts, utilities, and components heavily inspired by or derived from [Remotion](https://www.remotion.dev/). 
-Remotion is a framework for creating videos programmatically in React. 
-We acknowledge and credit the creators of Remotion for their foundational work in this space.
+This project includes concepts, utilities, and components heavily inspired by or derived from several open-source projects:
+
+- **[Remotion](https://www.remotion.dev/)**: We acknowledge and credit the creators of Remotion for their foundational work in the space of programmatic video creation in React, which heavily inspired early iterations of this project.
+- **[Puppeteer](https://pptr.dev/)**: Used extensively for the backend render engine to capture frames.
+- **[FFmpeg](https://ffmpeg.org/)**: Used for encoding and merging video and audio streams.
+- **[React](https://react.dev/) & [Vite](https://vitejs.dev/)**: The core framework and build tool powering the user interface and preview canvas.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Used for styling the application UI.
+- **[dnd-kit](https://dndkit.com/)**: Used for the drag-and-drop mechanics in the editor.
+
+We thank the open-source community and the creators of these libraries for their contributions.
