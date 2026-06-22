@@ -72,3 +72,14 @@ This project is open-source and distributed under the **MIT License**.
 
 ### Third-Party Credits
 This project was built standing on the shoulders of giants. We heavily drew inspiration from **[Remotion](https://www.remotion.dev/)** for programmatic video concepts. We also extensively use **[Puppeteer](https://pptr.dev/)**, **[FFmpeg](https://ffmpeg.org/)**, **[React](https://react.dev/)**, **[Tailwind CSS](https://tailwindcss.com/)**, and **[dnd-kit](https://dndkit.com/)**. Please refer to the `LICENSE` file for full attribution and third-party credits.
+
+---
+
+## 🥚 Easter Egg: Why is there Pokémon code here?
+
+If you explore the root directory, you might notice some unusual files like `manage.py`, `backend_endpoint.py`, `schema.sql`, and folders named `pokemon` and `pokeproject`. 
+
+**What is this doing in a branding automation engine?**
+During the early stress-testing phase of Brandly v1, we needed a massive, structured dataset to test the asynchronous rendering engine at scale. We chose **Pokémon**! 
+
+These Python/Django files and Celery workers were originally built as a mock backend to dynamically feed thousands of Pokédex entries and stats into our `DesignMD` templates. This allowed us to benchmark how well the Puppeteer/FFmpeg pipeline could handle parallel rendering of thousands of unique "Pokémon Trading Card" videos. We decided to leave this legacy testing code in the repository as a fun nod to the project's origins and as a potential reference for how to hook up a Django/Celery backend to the Brandly renderer.
